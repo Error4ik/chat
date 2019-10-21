@@ -134,7 +134,7 @@ function uuidv4() {
 
 function onlineUsers() {
     $.ajax({
-        url: "http://localhost:8080/users",
+        url: "https://websocket-chat-5.herokuapp.com/users",
         method: "GET",
         success: function (data) {
             while (userArea.firstChild) {
